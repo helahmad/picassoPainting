@@ -1,0 +1,138 @@
+
+main{
+    margin: 5px 15px 10px 15px;
+    position: relative;
+}
+.topBox{
+    display: flex;
+    height: 50px;
+    margin-bottom: 7px;
+}
+
+.topBox > div {
+    background-color: rgb(53, 160, 160);
+    flex: 1;
+
+}
+
+.topBox > div:nth-child(2){
+    margin: 0 7px;
+}
+
+#middleBox{
+    background-color: rgb(53, 160, 160);
+    height: 150px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+#bottomBox{
+    background-color: yellowgreen;
+    height: 8px;
+}
+
+.circles{
+    border-radius: 50%;
+    position: absolute;
+    z-index: 3;
+}
+.circle1{
+    width: 35px;
+    height: 35px;
+    background-color: rgb(248, 139, 157);
+    top: 17%;
+    left: 25%;
+}
+.circle2{
+    width: 20px;
+    height: 20px;
+    background-color: gold;
+    top: 35%;
+    left: 15%;
+}
+
+.circle3{
+    width: 35px;
+    height: 35px;
+    background-color: gold;
+    top: 5%;
+    left: 10%;
+}
+.circle4{
+    width: 15px;
+    height: 15px;
+    background-color: rgb(248, 139, 157);
+    top: 2%;
+    left: 40%;
+}
+.circle5{
+    width: 15px;
+    height: 15px;
+    background-color: rgb(248, 139, 157);
+    top: 21%;
+    left: 2%;
+}
+.circle6{
+    width: 15px;
+    height: 15px;
+    background-color: rgb(248, 139, 157);
+    top: 2%;
+    left: 2%;
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    z-index: 1;
+    position: absolute;
+}
+
+.triangle1{
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 120px solid yellowgreen;
+    left: 72%;
+    top: 40%;
+    z-index: 3;
+    position: absolute;
+}
+.triangle2{
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 170px solid rgb(58, 116, 68);
+    left: 60%;
+    top: 17%;
+    
+}
+
+.form{
+    
+    /*border: 1px solid gray;*/
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /*align-items: center;*/
+}
+
+.submitButton{
+    margin: 1rem;
+    padding: 3px;
+    align-self: center;
+    width: 35%;
+    background-color: yellowgreen;
+}
+
+input[type="submit"]:hover {
+    background-color: #f6e087;
+}
+
+@media only screen and (max-width: 768px) {
+    /* styles applied when screen width is 768px or less */
+    .form ,
+    main {
+        width: 90%;
+        margin: auto;
+        font-size: 14px;
+        grid-template-columns: 1fr;
+    }
+    }
